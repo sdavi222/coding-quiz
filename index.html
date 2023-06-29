@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coding Quiz</title>
+    <link rel="stylesheet" href="./assets/style.css" />
+  </head>
+
+  <body>
+    <nav>
+      <p id="viewhighscores">View Highscores</p>
+      <p id="timer">0</p>
+    </nav>
+    <main>
+      <section id="intro" class="main-section">
+        <h1>Coding Quiz</h1>
+        <p>Answer as many questions correctly as you can within the time limit</p>
+        <button id="start-button" class="ui-button">Start</button>
+      </section>
+      <section id="questions" class="main-section">
+        <h1 id="question">Question 1</h1>
+        <div id="answers">
+          <button id="answer1" class="answer-button">answer 1</button>
+          <button id="answer2" class="answer-button">answer 2</button>
+          <button id="answer3" class="answer-button">answer 3</button>
+          <button id="answer4" class="answer-button">answer 4</button>     
+        </div>
+        <h2 id="answer-result"></h2> 
+      </section>
+      <section id="complete" class="main-section">
+        <h1>Quiz Complete</h1>
+        <p id="score"></p>
+        <div id="input">        
+          <input type="text" id="input-initials" name="initials">
+          <button id="submit-highscore" class="ui-button">submit</button>  
+        </div>
+      </section>
+      <section id="highscores" class="main-section">
+        <h1>Highscores</h1>
+        <ol id="highscore-list">
+        </ol>
+        <button id="restart-button" class="ui-button">go back</button>
+        <button id="clear-button" class="ui-button">clear highscores</button>
+      </section>
+    </main>
+    <script src="./assets/script.js"></script>
+  </body>
+
+</html>
